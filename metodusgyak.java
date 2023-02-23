@@ -13,8 +13,9 @@ public class Metodusgyak {
         String kimenet = "Az első 10 szám összege: " + elso10SzamOsszege();
         kiir(kimenet);
         
-        int szam1 = , szam2 = ;
-        kiir("%d + %d = %d\n".formatted(szam1, szam2, szam1+szam2));
+        int szam1 = 8, szam2 = 3, szam3 = 2, szam4 = 11;
+        kiir("%d + %d = %d\n".formatted(szam1, szam2, osszead(szam1, szam2)));
+        kiir("%d + %d + %d+ %d = %d\n".formatted(szam1, szam2, szam3, szam4, osszead(osszead(szam1, szam2),osszead(szam3, szam4))));
     }   
     
     
