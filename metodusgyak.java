@@ -8,21 +8,31 @@ package com.mycompany.method;
  *
  * @author User
  */
-public class metodusgyak {
+public class Metodusgyak {
     public static void main(String[] args){
-        kiir("Az első 10 szám összege: " + osszeg);
-    }
+        String kimenet = "Az első 10 szám összege: " + elso10SzamOsszege();
+        kiir(kimenet);
+        
+        int szam1 = , szam2 = ;
+        kiir("%d + %d = %d\n".formatted(szam1, szam2, szam1+szam2));
+    }   
     
-    private static void kiir(String szoveg) {
-        System.out.printf(szoveg);
-    }
     
-    private static void elso10SzamOsszege(){
+    private static int elso10SzamOsszege(){
         int osszeg = 0;
         for (int i = 0; i < 10; i++) {
             osszeg += i;
+        return osszeg;
         }
-        
     }
     
+    private static int osszead(int a, int b){
+        return a+b;
+        }
+    }
+    
+    
+    private static void kiir(String szoveg) {
+        System.out.print(szoveg);
+    }
 }
